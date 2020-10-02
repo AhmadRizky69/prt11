@@ -1,0 +1,11 @@
+{{ define "Login" }}
+  {{ template "Header" }}
+    {{ template "Menu" }} 
+   <h2>New Name and City</h2>  
+    <form method="POST" action="insert">
+      <label> Username </label><input type="text" name="username" /><br />
+      <label> Password </label><input type="text" name="password" /><br />
+      <input type="submit" value="Login" />
+    </form>
+  {{ template "Footer" }}
+{{ end }}
